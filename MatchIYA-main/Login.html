@@ -1,0 +1,86 @@
+<HTML>
+    <title>Login</title>
+
+    <head>
+		<title>Frontpage</title>
+		
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+		
+        <link href="assets/css/global.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+	
+	<body class="light-mode">
+
+        <button id="toggle-mode" class="lampbutton"><img src="assets/images/cupid.png" class="switch"></button>
+        
+        <script>
+          const toggle = document.getElementById("toggle-mode");
+          const body = document.body;
+    
+          const setMode = mode => {
+            body.className = mode;
+            localStorage.setItem("mode", mode);
+          };
+    
+          const toggleMode = () => {
+            if (body.classList.contains("light-mode")) {
+              setMode("dark-mode");
+            } else {
+              setMode("light-mode");
+            }
+          };
+    
+          toggle.addEventListener("click", toggleMode);
+    
+          const currentMode = localStorage.getItem("mode") || "light-mode";
+          setMode(currentMode);
+            </script>
+
+        <div class="topNav">  
+                
+                <div class="leftTopNav">
+                    <a href="login.html">Join Now</a>
+                </div>  
+                
+                <div class="centerTopNav">
+                    <a href="frontpage.php">Match IYA</a>
+                </div>  
+                
+                <div class="rightTopNav">
+                    <i class="fa fa-bars" style="font-size: 18px; color:red;">
+                </i></div>  
+                
+        </div> 
+
+        <div id="form" style="width: 400px; margin: auto; text-align: center; margin-top: 200px;">
+            <h3 style="text-align: center; font-size: 20pt;"><b>Ready to meet your match?</b></h3>
+            <br>
+            <form action="login.html">
+                <input type="text" id="phone" name="phone" placeholder="Phone Number*" style="background-color: rgba(255, 255, 255, 0)"><br>
+                <input type="text" id="password" style="background-color: rgba(255, 255, 255, 0)" name="password" value="Password*"><br>
+                <input id="formButton" type="submit" value="Submit">
+            </form>
+            <p>Already have an account? <b>Login</b>
+        </div>
+
+        
+        <div class="footer" style="padding: 20vw 8vw 6vw 8vw;"><br>
+            
+            <img src="assets/images/arrowLong.png" style="width: 100%"><br>
+            
+            <div class="right">
+                <br>
+                <p style="text-align: right;">&#169; Match IYA 2023 <br>All Rights Reserved. </p>
+            </div>
+
+            <div class="left">
+                <br><br>
+                <a href="frontpage.php"><img src="assets/images/MatchIYALogo.png" width="150px"></a>
+            </div>
+        </div>
+        
+        <br><br>
+    </body>
+</HTML>

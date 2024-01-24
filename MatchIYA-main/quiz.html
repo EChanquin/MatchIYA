@@ -1,0 +1,263 @@
+
+<HTML>
+    <title>Quiz</title>
+
+    <head>
+        <link href="assets/css/global.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <form action="Quiz.php" method="post">
+        <div id="topNav">
+            <div id="leftTopNav">Join Now</div>
+            <div id="centerTopNav" style="padding-right: 60px;">Match IYA</div>
+            <div id="rightTopNav"><i class="fa fa-bars" style="font-size: 18px;color:red;"></i></div>
+        </div>
+
+        <div class="quiz-question" id="form" id="section1" style="width: 400px; margin: auto; text-align: center; margin-top: 100px;">
+            <h3 style="text-align: center; font-size: 20pt;">First, about you...</h3>
+            <br>
+            Cohort
+            <select id="cohort" name="cohort" style="width: 60px; margin-right: 30px;">
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+            <br>
+            Gender
+            <select id="gender" name="gender" style="width: 120px;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            Sexuality
+            <select id="sexuality" name="sexuality" style="width: 120px;">
+                <option value="straight">Straight</option>
+                <option value="gay">Gay</option>
+                <option value="lesbian">Lesbian</option>
+                <option value="bisexual">Bisexual</option>
+            </select>
+            <br>
+            Type of Relationship
+            <select id="relationship" name="relationship" style="width: 130px;">
+                <option value="romantic">Romantic</option>
+                <option value="platonic">Platonic</option>
+            </select>
+            <br>
+            <button type="button" class="navigation-button" onclick="nextSection()">Next</button>
+        </div>
+
+        <div class="quiz-question" id="section2" style="display: none; height: 400px; padding-top: 100px;">
+            <h2 style="text-align: center;"><em>Select all your IYA interests</em></h2>
+            <br>
+            <div style="text-align: center; width: 500px; margin: auto;">
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="interests[]" value="Art"><span>Art</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="interests[]" value="Technology"><span>Technology</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox"name="interests[]"  value="Business"><span>Business</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="interests[]"  value="Blockchain"><span>Blockchain</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="interests[]"  value="Fashion"><span>Fashion</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="interests[]"  value="AI"><span>AI</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox"  name="interests[]" value="Marketing"><span>Marketing</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="interests[]"  value="Music"><span>Music</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="interests[]"  value="UI/UX"><span>UI/UX</span>
+                    </label>
+                </div>
+            </div>
+            <br>
+            <button type="button" class="navigation-button" onclick="prevSection()">Previous</button>
+            <button type="button" class="navigation-button" onclick="nextSection()">Next</button>
+        </div>
+
+        <div class="quiz-question" id="section3" style="display: none; height: 400px; padding-top: 100px;">
+            <h2 style="text-align: center;"><em>Sports</em></h2>
+            <br>
+            <div style="text-align: center; width: 500px; margin: auto;">
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Basketball"><span>Basketball</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Football"><span>Football</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Baseball"><span>Baseball</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Tennis"><span>Tennis</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Hockey"><span>Hockey</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Swimming"><span>Swimming</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Track"><span>Track</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Rowing"><span>Rowing</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="sports[]" value="Rugby"><span>Rugby</span>
+                    </label>
+                </div>
+            </div>
+            <button type="button" class="navigation-button" onclick="prevSection()">Previous</button>
+            <button type="button" class="navigation-button" onclick="nextSection()">Next</button>
+        </div>
+
+        <div class="quiz-question" id="section4" style="display: none; height: 400px; padding-top: 100px;">
+            <h2 style="text-align: center;"><em>Foods</em></h2>
+            <br>
+            <div style="text-align: center; width: 500px; margin: auto;">
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Pizza"><span>Pizza</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Sushi"><span>Sushi</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]" value="Ramen"><span>Ramen</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Chicken Tenders"><span>Chicken Tenders</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Poke Bowl"><span>Poke Bowl</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Pasta"><span>Pasta</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Tacos"><span>Tacos</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Korean BBQ"><span>Korean BBQ</span>
+                    </label>
+                </div>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" name="foods[]"  value="Burgers"><span>Burgers</span>
+                    </label>
+                </div>
+            </div>
+            <button type="button" class="navigation-button" onclick="prevSection()">Previous</button>
+            <button type="button" class="navigation-button" onclick="nextSection()">Next</button>
+        </div>
+
+        <div class="quiz-question" id="section5" style="display: none; height: 200px; padding-top: 100px;">
+            <h2 style="text-align: center;"><em>Short Answers</em></h2>
+            <br>
+            <div style="text-align: center; width: 500px; margin: auto;">
+                <input type="text" id="joke" name="joke" placeholder="Tell us a joke"><br>
+            </div>
+            <button type="button" class="navigation-button" onclick="prevSection()">Previous</button>
+            <button type="button" class="navigation-button" onclick="nextSection()">Next</button>
+        </div>
+
+        <div class="quiz-question" id="section6" style="display: none; height: 200px; padding-top: 100px;">
+            <h2 style="text-align: center;"><em>Short Answers</em></h2>
+            <br>
+            <div class="quiz-section" id="sectionLast" style="display: none;">
+                <button type="button" class="navigation-button" onclick="prevSection()">Previous</button>
+                <input id="formButton" type="submit" value="Submit">
+            </div>
+        </div>
+    
+    </form>
+
+    <script>
+        let currentSection = 0;
+        const sections = document.querySelectorAll('.quiz-question');
+
+        function showSection(index) {
+            sections.forEach((section, idx) => {
+                section.style.display = idx === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSection() {
+            currentSection = Math.min(sections.length - 1, currentSection + 1);
+            showSection(currentSection);
+        }
+
+        function prevSection() {
+            currentSection = Math.max(0, currentSection - 1);
+            showSection(currentSection);
+        }
+        showSection(currentSection);
+    </script>
+</HTML>

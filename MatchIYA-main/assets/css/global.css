@@ -1,0 +1,707 @@
+* {
+    font-weight: 200; /* Sets font weight to normal for all elements */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #28001E;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #F82428;
+    margin: 0;
+    font-family: "PPAgrandir-Variable", sans-serif;
+}
+
+button {
+    font-family: "PPAgrandir-Variable", sans-serif;
+}
+
+@font-face {
+    font-family: "PPAgrandir-Variable";
+    src: url('../fonts/PPAgrandir-Variable.ttf');
+}
+
+@font-face {
+    font-family: "PPMigra-Italic";
+    src: url('../fonts/PPMigra-Italic.ttf');
+}
+
+.dark-mode { 
+	background-color: #28001E; 
+	color: #F82428; 
+	animation-name: fadein;
+    animation-duration: 2s;
+} 
+
+.light-mode { 
+	background-color: #E8D0D0; 
+	color: #F82428; 
+	animation-name: fadein;
+    animation-duration: 2s;
+} 
+
+.topnav { 
+	font-family: "PPAgrandir-Variable", sans-serif; 
+	text-align: center; 
+    padding-top: 1vh;
+} 
+
+.centerTopNav { 
+	position: absolute; 
+	transform: translate(-50%, 0%); 
+	left: 50%; 
+	font-family: "PPAgrandir-Variable", sans-serif; 
+}
+
+.rightTopNav { 
+	float: right; 
+	margin-right: 2vw; 
+	font-family: "PPAgrandir-Variable", sans-serif; 
+} 
+
+.leftTopNav { 
+	float:left; 
+	margin-left: 2vw; 
+	font-family: "PPAgrandir-Variable", sans-serif; 
+} 
+
+a { 
+	text-decoration: none; 
+    font-weight: 200;
+	color: #F82428;
+} 
+
+.lampbutton{ 
+	background-color: rgba(0, 0, 0, 0); 
+	font-weight: bold; 
+	color:white; 
+	height: 5rem; 
+	width: 5rem; 
+	position: absolute; 
+	z-index: 1; 
+	bottom: 4rem; 
+	border: none;
+} 
+
+.switch { 
+	width: 70px; 
+	position: fixed;
+} 
+
+.footer { 
+	font-family: "PPAgrandir-Variable", sans-serif; 
+	font-weight: 100; 
+	margin-bottom: 50px; 
+	position: absolute;
+    padding: 1vw 8vw;
+} 
+
+.right { 
+	text-align: right; 
+	float: right; 
+} 
+
+.left { 
+	text-align: left; 
+	float: left; 
+	font-size: small;
+} 
+
+#splash {
+    height: 300px;
+    padding-top: 225px;
+    margin-bottom: 300px;
+}
+
+.quiz-question {
+    padding-top: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 60pt;
+    font-family: "PPAgrandir-Variable", sans-serif;
+    text-align: center;
+    color: #F82428;
+    margin: 0;
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+h2 {
+    font-size: 36pt;
+    font-family: "PPMigra-Italic", serif;
+    color: #F82428;
+    margin: 0;
+}
+
+h3 {
+    font-size: 12pt;
+    font-family: "PPAgrandir-Variable", sans-serif;
+    color: #F82428;
+    margin: 0;
+}
+
+p {
+    font-family: "PPAgrandir-Variable", sans-serif;
+    font-size: 14pt;
+}
+
+.button {
+    width: 250px;
+    height: 40px;
+    background-color: #ffffff00;
+    color: #F82428;
+    font-family: "Jost", sans-serif;
+    border: 1px solid #F82428;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-top: 20px;
+    border-radius: 100px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+}
+
+.button:hover {
+    background-color: #F82428;
+    color: #28001E;
+    cursor: pointer
+}
+
+.submit {
+    width: 250px;
+    height: 40px;
+    background-color: #ffffff00;
+    color: #F82428;
+    font-family: "Jost", sans-serif;
+    border: 1px solid #F82428;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-top: 20px;
+    border-radius: 100px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+}
+
+.submit:hover {
+    background-color: #00000000;
+    color: #28001E;
+    cursor: pointer
+}
+
+.navigation-button {
+    width: 150px;
+    height: 60px;
+    background-color: #ffffff00;
+    color: #F82428;
+    font-family: "Jost", sans-serif;
+    border: 1px solid #F82428;
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+	margin-bottom: 10px;
+}
+
+#next {
+    background-color: #F82428;
+    color: #28001E;
+
+}
+
+.navigation-button:hover {
+    background-color: #F82428;
+    color: #28001E;
+    cursor: pointer
+}
+
+.topnav {  
+    font-family: "PPAgrandir-Variable", sans-serif;
+    position: absolute;
+    text-align: center;  
+    width: 100%;
+    margin-top: 8px;
+}  
+
+#centerTopNav {  
+   display: inline;  
+}  
+
+.rightTopNav {  
+    float:right; 
+    margin-right: 2vw; 
+}
+
+.leftTopNav {  
+    float:left; 
+    margin-left: 2vw;  
+
+ 
+}  
+
+a {
+    text-decoration: none;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+details {
+    color: #F82428;
+    font-family: "Jost", sans-serif;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+summary {
+    padding-bottom: 10px;
+    width: 90%;
+    border: 1px solid #F82428;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+
+    
+}
+
+#answer {
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+
+}
+
+#form-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+#form {
+    width: 400px;
+    align-items: center; 
+	margin: auto;
+    border: 1px solid #F82428;
+    border-radius: 30px;
+    padding: 30px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+    font-size: 16pt;
+}
+
+
+input[type=text] {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color:#F82428;
+    background-color: #00000000;
+    border: 1px solid #F82428;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+
+}
+
+input[type=password] {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color:#F82428;
+    background-color: #00000000;
+    border: 1px solid #F82428;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+
+}
+
+#formButton {
+    width: 100%;
+    height: 60px;
+    background-color: #F82428;
+    color: #28001E;
+    font-family: "Jost", sans-serif;
+    border: 1px solid #F82428;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+
+}
+
+#formButton:hover {
+    background-color: #00000000;
+    color: #F82428;
+    border: 1px solid #F82428;
+    cursor: pointer
+
+}
+
+::placeholder {
+    color: #F82428;
+}
+
+#ck-button {
+    margin: 4px;
+    background-color: #00000000;
+    border-radius: 10px;
+    border: 1px solid #F82428;
+    overflow: auto;
+    float: left;
+    width: 150px;
+    height: 100px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+}
+
+#ck-button label {
+    float: left;
+    width: 4.0em;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#ck-button label span {
+    text-align: center;
+    display: block;
+    padding-top: 25%;
+}
+
+#ck-button label input {
+    position: absolute;
+    top: -20px;
+    
+}
+
+#ck-button input:checked+span {
+    background-color: #F8242850;
+    height: 62px;
+}
+
+select {
+    border-radius: 10px;
+    color:#F82428;
+    background-color: #00000000;
+    border: 1px solid #F82428;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+    height: 50px;
+    width: 140px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.text1 {
+	width: 500px
+}
+
+.text2 {
+	width: 500px
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media screen and (max-width:1200px) {
+    #posters {width: 900px}
+    #posters {grid-template-columns: 300px 300px 300px;}
+}
+
+@media screen and (max-width:900px) {
+    #posters {width: 600px}
+    #posters {grid-template-columns: 300px 300px;}
+	.text1 {width: 400px}
+	.text2 {width: 400px}
+}
+
+@media screen and (max-width:600px) {
+    #posters {width: 400px}
+    #posters {grid-template-columns: 200px 200px;}
+    .poster {width: 175px; height: 260px;}
+    h1 {font-size: 32pt;}
+    h2 {font-size: 20pt;}
+    h3 {font-size: 14pt;}
+    #seefilms {font-size: 15pt;}
+	.text1 {width: 300px; font-size: 16px;}
+	.text2 {width: 300px; font-size: 16px;}
+    .quiz-question {width: 0%;}
+}
+
+.discover-wrapper {
+    height: 100vh;
+}
+
+.likes_section {
+    padding: 6rem 2rem 0rem 2rem;
+    display: flex;
+    gap: 4rem;
+    flex-grow: 1;
+    position: relative;
+    transition: flex-grow 0.5s ease, width 0.5s ease;
+
+}
+
+.likes_section.collapsed {
+    flex-grow: 0;
+    width: 0; /* Shrinks the section */
+    transition: flex-grow 0.5s ease, width 0.5s ease;
+
+}
+
+#collapseLikesBtn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateX(100%) translateY(-50%);
+    background-color: #28001E;
+    color: #F82428;
+    border: 1px solid #F82428;
+    border-radius: 100px;
+
+}
+
+.sort_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+
+.likes_container {
+    margin-right: 1rem;
+    overflow-y: scroll;
+    
+}
+
+.sort_button {
+    background-color: #ffffff00;
+    color: #F82428;
+    border: 1px solid #F82428;
+    text-align: center;
+    font-size: 1rem;
+    width: 10rem;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    border-radius: 100px;
+    font-family: "PPAgrandir-Variable", sans-serif;
+}
+
+.sort_button:hover {
+    background-color: #f8242880;
+    color: #F82428;
+}
+
+/* discover */
+.card_section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    padding-left: 20px;
+
+}
+
+.card-stack {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    transform: translateX(-25px);
+    padding-left: 20px;
+}
+
+.dark-mode .card-stack .card {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    transition: transform 0.5s, opacity 0.5s, color 0.5s, border 0.5s;
+    color: rgba(248, 36, 40, 1); /* Text color, initially fully opaque */
+    border: 1px solid rgba(248, 36, 40, 1);
+    background-color: #28001E;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --rotation: 0deg;
+    --card-index: 0;
+    transform: rotate(var(--rotation)) translateZ(var(--card-index));
+    z-index: calc(var(--z-index-base, 1000) - var(--card-index));
+    padding-left: 20px;
+
+}
+
+
+.light-mode .card-stack .card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s, opacity 0.5s, color 0.5s, border 0.5s;
+    color: rgba(248, 36, 40, 1); /* Text color, initially fully opaque */
+    border: 1px solid rgba(248, 36, 40, 1);
+    background-color: #E8D0D0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --rotation: 0deg;
+    --card-index: 0;
+    transform: rotate(var(--rotation)) translateZ(var(--card-index)) translateX(-100px);
+    z-index: calc(var(--z-index-base, 1000) - var(--card-index));
+    padding-left: 20px;
+
+    
+}
+
+.dark-mode .likes_container .card {
+    position: relative;
+    width: 250px;
+    height: 275px;
+    color: rgba(248, 36, 40, 1); /* Text color, initially fully opaque */
+    border: 1px solid rgba(248, 36, 40, 1);
+    background-color: #28001E;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    margin-bottom: 1rem
+}
+
+
+.light-mode .likes_container .card {
+    position: relative;
+    width: 250px;
+    height: 275px;
+    color: rgba(248, 36, 40, 1); /* Text color, initially fully opaque */
+    border: 1px solid rgba(248, 36, 40, 1);
+    background-color: #E8D0D0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    margin-bottom: 1rem
+}
+
+.like-animate {
+    transform: rotate(20deg) translateX(100%) translateY(-25%) !important;
+    opacity: 0;
+}
+
+.dislike-animate {
+    transform: rotate(-20deg) translateX(-100%) translateY(-25%) !important;
+    opacity: 0;
+}
+
+.dark-mode .rate-button {
+    width: 50px;
+    height: 50px;
+    background-color: #28001E;
+    color: #F82428;
+    border: 1px solid #F82428;
+    border-radius: 100px;
+}
+
+.light-mode .rate-button {
+    width: 50px;
+    height: 50px;
+    background-color: #E8D0D0;
+    color: #F82428;
+    border: 1px solid #F82428;
+    border-radius: 100px;
+}
+
+.rate-button:hover {
+    background-color: #f8242826;
+    cursor: pointer
+}
+
+.rate-button-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .discover-wrapper {
+        flex-direction: column-reverse;
+        height: auto;
+        width: unset;
+    }
+
+    .likes_section, .card_section {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .likes_section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .likes_section.collapsed {
+        display: none; /* Hide the likes section when collapsed */
+    }
+
+    .likes_container {
+        margin-right: 0;
+        overflow-y: unset;
+    }
+
+    .card-stack {
+        transform: translateX(0);
+    }
+
+    #collapseLikesBtn {
+        display: none;
+    }
+
+    .rate-button-wrapper {
+        position: relative;
+        top: unset;
+        transform: translateY(100%);
+        display: flex;
+        gap: 100px;
+    }
+
+    .dark-mode .likes_container .card {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        padding: 1vw;
+        margin-bottom: 1rem
+    }
+
+
+    /* Adjust other elements like buttons, text sizes, etc., as needed */
+}
